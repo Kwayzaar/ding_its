@@ -41,10 +41,7 @@ class App extends Component {
         <Header />
         <Searchform getRecipes={this.getRecipes} />
         <FavoritesContainer favoriteRecipes={this.state.favoriteRecipes} />
-        <Container 
-          recipes={this.state.recipes} 
-          addFavorite={this.addFavorite} 
-        />
+        <Container addFavorite={this.addFavorite} recipes={this.state.recipes} />
       </div>
     );
   }
